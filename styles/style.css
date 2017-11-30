@@ -46,13 +46,6 @@ button {
     width:26px;
 	height:18px;
 }
-select { 
-  font-size: 14px;
-  width: 100%;
-}
-option:checked {
-  color: blue;
-}
 p {
 	color:white;
 	font-size: 10px;
@@ -75,11 +68,11 @@ li {
 	border-bottom:1px solid #DBDBDB;
 }
 .publicity {
-position:relative;
+	position:relative;
 	top:-225px;
 } 
 .icon {
-	 list-style-image: url("../images/sp-over.jpg");
+	list-style-image: url("../images/sp-over.jpg");
 	padding-top: 10px;
 	padding-left:42px;
 
@@ -100,12 +93,10 @@ aside {
 	font-family:Tahoma;
 	font-size: 11px;
 }
-.h3 {
-	background-color:#DBDBDB;
-	width:240px;
-	height:38px;
-}
 h3 {
+	background-color:#DBDBDB;
+	width:224px;
+	height:19px;
 	padding:11px;
 	font-size: 14px;
 	font-weight: lighter;
@@ -117,6 +108,10 @@ main {
 	padding:8px 16px 10px 18px;
 	background:#1F1F1F;
 }
+.box {
+	display:flex;
+	flex-direction:row;
+}
 .price {
 	background:white;
 	width:211px;
@@ -124,23 +119,50 @@ main {
 	margin:0 4px 8px;
 	padding:0 9px;
 	border:1px solid black;
-	float:left;
 }
-.details {
-	width:237px;
+.price img {
+	width:53%;
 }
-main p {
+.price p {
+	margin-top:10px;
 	color:black;
 	font-size: 11px;
+	width:40%;
+}
+.product {
+	display:flex;
+	flex-direction:row;
+}
+.buttons {
+    margin-top:10px;
+    padding-top:9px;
+    border-top:1px dashed grey;
+	display: flex;
+	flex-direction:row;
+	align-items: flex-end;
+}
+.dtl {
+	background-image: url(../images/details.jpg);
+	width: 79px;
+	height:19px;
+}
+.add {
+	background-image: url(../images/add-to-cart.jpg);
+	width: 102px;
+	height:19px;
 }
 .menu {
 	color:black;
+	font-size:10px;
+	position:relative;
+	top:-50px;
+	left:65px;
 }
 .prod p {
 	margin:5px 1px 31px 1px;	
 }
 .prod img {
-	width:100px;
+	width:40%;
 }
 span {
 	color:red;
@@ -150,10 +172,9 @@ span {
 	top:2px;
 	left:33px;	
 }
-.price img {
-	float:left;
-}
 .cart img {
+
+	width:40%;
 	margin:4px 1px;
 }
 .prod {
@@ -164,11 +185,20 @@ span {
 	float:left;
 }
 .products {
+	background:#1F1F1F;
 	padding:5px;
 	top:-22px;
 	left:6px;
 	font-size:14px;
 	color:white;
+}
+.details {
+	display:flex;
+	flex-direction:row;
+}
+.details img {
+	width:233px;
+	margin:3px;
 }
 footer {
 	width:761px;
@@ -180,7 +210,6 @@ footer {
 	height:67px;
 }
 .footer p {
-	position:relative;
-	top:-49px;
-	left:80px;
+	color:black;
+	margin-top:5px;
 }		

@@ -21,10 +21,10 @@
 			</div>
 			<div class="cur">
 				<p>Currencies<br></p>
-				<select size ="1" name= "currency">
-					<option value = "1" selected>US Dollar</option>
-					<option value = "2" >EUR</option>
-					<option value = "3" >RUB</option>
+				<select name="currencies" size="1">
+					<option value = "us" selected>US Dollar</option>
+					<option value = "eur" >EUR</option>
+					<option value = "rub" >RUB</option>
 				</select>
 			</div>
 		</div>
@@ -42,9 +42,7 @@
 		</div>
 		</nav>
 	<aside>
-		<div class="h3">
 			<h3>BROWSE BY CATEGORY</h3>
-	    </div>
 			<ul class="icon2">
 				<li><a href="#">Barebones</a></li>
 				<li><a href="#">CD / DVD Drives & Media</a></li>
@@ -70,48 +68,68 @@
 			<img class="day" src="images/details-68.jpg" alt="">	
 	</aside>
 	<main>
-		<p class="products">FEATURED PRODUCTS</p>
-		<div class="price">
-			<div class="prod">
-				<img src="images/prod1.jpg" alt="product">
-				<p><b>BENQ-FP231W<br>LCD Monitor</b></p><span><b>$997</b></span>
+		<h3 class="products">FEATURED PRODUCTS</h3>
+		<div class="box">
+			<div class="price">
+			    <div class="product">
+			   		<img src="images/prod1.jpg" alt="product">
+					<p><b>BENQ-FP231W<br>LCD Monitor</b><br><br><span><b>$997</b></span></p>
+				</div>
+				<div class="buttons">
+					<button class="dtl"></button>
+					<button class="add"></button>
+				</div>
 			</div>
-			<a class="cart" href="#"><img src="images/details.jpg" alt=""></a>
-			<a class="cart" href="#"><img src="images/add-to-cart.jpg" alt=""></a>
-		</div>
-		<div class="price">
-			<div class="prod">
-				<img src="images/prod-361.jpg" alt="product">
-				<p><b>APPLE-1.5 Ghz PowerBook</b></p><span><b>$1799</b></span>
+			<div class="price">
+				<div class="product">
+					<img src="images/prod-361.jpg" alt="product">
+					<p><b>APPLE-1.5 Ghz PowerBook</b><br><br><span><b>$1799</b></span></p>
+				</div>
+				<div class="buttons">
+					<button class="dtl"></button>
+					<button class="add"></button>
+				</div>
 			</div>
-			<a class="cart" href="#"><img src="images/details.jpg" alt=""></a>
-			<a class="cart" href="#"><img src="images/add-to-cart.jpg" alt=""></a>
 		</div>
-		<div class="price">
-			<div class="prod">
-				<img src="images/prod-501.jpg" alt="product">
-				<p><b>CANON-IP4200 Pixma</b></p><span><b>$109</b></span>
+		<div class="box">
+			<div class="price">
+				<div class="product">
+					<img src="images/prod-501.jpg" alt="product">
+					<p><b>CANON-IP4200 Pixma</b><br><br><span><b>$109</b></span></p>
+				</div>
+				<div class="buttons">
+					<button class="dtl"></button>
+					<button class="add"></button>
+				</div>
 			</div>
-			<a class="cart" href="#"><img src="images/details.jpg" alt=""></a>
-			<a class="cart" href="#"><img src="images/add-to-cart.jpg" alt=""></a>
-		</div>
-		<div class="price">
-			<div class="prod">
-				<img src="images/prod-521.jpg" alt="product">
-				<p><b>NEC-VT670K Video Projector</b></p><span><b>$1599</b></span>
+			<div class="price">
+				<div class="product">
+					<img src="images/prod-521.jpg" alt="product">
+					<p><b>NEC-VT670K Video Projector</b><br><br><span><b>$1599</b></span></p>
+				</div>
+				<div class="buttons">
+					<button class="dtl"></button>
+					<button class="add"></button>
+				</div>
 			</div>
-			<a class="cart" href="#"><img src="images/details.jpg" alt=""></a>
-			<a class="cart" href="#"><img src="images/add-to-cart.jpg" alt=""></a>
 		</div>
-		
-		<img class="details" src="images/details-66.jpg" alt="">
-		<img class="details" src="images/details-67.jpg" alt="">
+		<div class="details">
+			<a href="#"><img src="images/details-66.jpg" alt=""></a>
+			<a href="#"><img src="images/details-67.jpg" alt=""></a>
+		</div>
 	</main>
 	<footer>
 		<img src="images/cards.jpg" alt="">
 		<div class="footer">
 			<img src="images/b_links.jpg" alt="">
-			<p class="menu">SPECIALS | SITE SEARCH | CONTACT US | CREATE AN ACCOUNT | CUSTOMER LOGIN <br>Copyright &copy; Your Company Name</p>
+			<div class="menu">
+				<a href="#">SPECIALS |</a>
+				<a href="#">SITE SEARCH |</a>
+				<a href="#">CONTACT US |</a>
+				<a href="#">CREATE AN ACCOUNT |</a>
+				<a href="#">CUSTOMER LOGIN |</a>
+				<p>Copyright &copy; Your Company Name</p>
+			</div>
 		</div>
 	</footer>	
 </div>
