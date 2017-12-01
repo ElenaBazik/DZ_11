@@ -68,8 +68,8 @@ li {
 	border-bottom:1px solid #DBDBDB;
 }
 .publicity {
-	position:relative;
-	top:-225px;
+	position:absolute;
+	top:9px;
 } 
 .icon {
 	list-style-image: url("../images/sp-over.jpg");
