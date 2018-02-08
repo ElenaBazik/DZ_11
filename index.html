@@ -11,36 +11,37 @@
 		<div class="logo"><img src="images/main.jpg" alt="Logo"></div>
 		<div class = "top">
 			<div class="shopping">
-				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shopping Cart:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 items<br><br></p>
+				<p><span class="cart">Shopping Cart:</span>
+				<span class="items">0 items</span></p>
 			</div>
 			<div class="choose">
 				<p>Choose your language:</p>
-				<button class="flag"><img src="images/english.jpg" alt="english"></button>
-				<button class="flag"><img src="images/german.jpg" alt="german"></button>
-				<button class="flag"><img src="images/spanish.jpg" alt="spanish"></button>
+				<button class="flag"></button>
+				<button class="flag_ge"></button>
+				<button class="flag_sp"></button>
 			</div>
 			<div class="cur">
 				<p>Currencies<br></p>
-				<select name="currencies" size="1">
-					<option value = "us" selected>US Dollar</option>
-					<option value = "eur" >EUR</option>
-					<option value = "rub" >RUB</option>
+				<select>
+					<option label = "US Dollar">US Dollar</option>
+					<option label = "EUR">EUR</option>
+					<option label = "RUB">RUB</option>
 				</select>
 			</div>
 		</div>
 	</header>
 		<nav>
-			<ul class=icon>
+			<ul class="icon">
 				<li><a href="#">Home Page</a></li>
 				<li><a href="#">New Products</a></li>
 				<li><a href="#">Specials</a></li>
 				<li><a href="#">My Account</a></li>
 				<li><a href="#">Contact us</a></li>
-			</ul>
+			<!-- </ul> -->
 		<div class="publicity">
-			<img  src="images/template2.png" alt="">
 		</div>
 		</nav>
+		<div class="wrapp">
 	<aside>
 			<h3>BROWSE BY CATEGORY</h3>
 			<ul class="icon2">
@@ -65,7 +66,7 @@
 				<li><a href="#">Printers</a></li>
 				<li><a href="#">Scanners</a></li>
 			</ul>
-			<img class="day" src="images/details-68.jpg" alt="">	
+			<img class="day" src="images/details-68.jpg" alt="">
 	</aside>
 	<main>
 		<h3 class="products">FEATURED PRODUCTS</h3>
@@ -90,8 +91,6 @@
 					<button class="add"></button>
 				</div>
 			</div>
-		</div>
-		<div class="box">
 			<div class="price">
 				<div class="product">
 					<img src="images/prod-501.jpg" alt="product">
@@ -112,26 +111,30 @@
 					<button class="add"></button>
 				</div>
 			</div>
-		</div>
-		<div class="details">
 			<a href="#"><img src="images/details-66.jpg" alt=""></a>
 			<a href="#"><img src="images/details-67.jpg" alt=""></a>
-		</div>
+	</div>
 	</main>
+</div>
 	<footer>
-		<img src="images/cards.jpg" alt="">
-		<div class="footer">
-			<img src="images/b_links.jpg" alt="">
+		<div class="payment">
+			<ul class= "cards">
+				<li><button class="payPal"></button></li>
+				<li><button class="visa"></button></li>
+				<li><button class="masterCard"></button></li>
+			</ul>
+		</div>
 			<div class="menu">
-				<a href="#">SPECIALS |</a>
-				<a href="#">SITE SEARCH |</a>
-				<a href="#">CONTACT US |</a>
-				<a href="#">CREATE AN ACCOUNT |</a>
-				<a href="#">CUSTOMER LOGIN |</a>
+				<ul class= "mn">
+					<li><a href="#">SPECIALS</a> | </li>
+					<li><a href="#">SITE SEARCH</a> | </li>
+					<li><a href="#">CONTACT US</a> | </li>
+					<li><a href="#">CREATE AN ACCOUNT</a> | </li>
+					<li><a href="#">CUSTOMER LOGIN</a> | </li>
+			    </ul>
 				<p>Copyright &copy; Your Company Name</p>
 			</div>
-		</div>
-	</footer>	
+	</footer>
 </div>
 </body>
 </html>

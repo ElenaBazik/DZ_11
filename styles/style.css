@@ -3,15 +3,13 @@
 	padding:0;
 }
 body {
-	background-color: white;
+	background-color: #FFFFFF;
 }
 .wrapper {
 	width:760px;
-	height:864px;
 	margin:0 auto;
-	text-align:left;
-	border-left:2px solid gray;
-	border-right:2px solid gray;
+	border-left:2px solid #808080;
+	border-right:2px solid #808080;
 	padding:0 3px;
 }
 header {
@@ -27,7 +25,7 @@ header {
 	display:flex;
 	justify-content: flex-end;
 	align-items: flex-end;
-	width:520px;
+	flex-grow:1;
 	height:85px;
 }
 .shopping,.choose,.cur {
@@ -36,63 +34,96 @@ header {
 	padding:10px;
 }
 .shopping,.choose {
-	border-right:1px dashed grey;
+	border-right:1px dashed #808080;
 }
 button {
 	border:0;
 	margin:3px;
 }
 .flag {
+	background-image: url("../images/english.jpg");
     width:26px;
 	height:18px;
 }
+.flag_ge {
+	background-image: url("../images/german.jpg");
+	width:26px;
+	height:18px;
+}
+.flag_sp {
+	background-image: url("../images/spanish.jpg");
+	width:26px;
+	height:18px;
+}
+.cart {
+	color:#FFFFFF;
+}
+.items {
+	color:#FFFFFF;
+	display:block;
+}
+select {
+	width:113px;
+}
 p {
-	color:white;
+	color:#FFFFFF;
 	font-size: 10px;
 	font-family:Tahoma;
 }
 a {
-	color:black;
+	color:#000000;
 	text-decoration: none;
 }
 nav {
 	width:760px;
 	height:170px;
+	display: flex;
+	flex-direction: row;
 	font-family:Tahoma;
 	font-size: 12px;
 }
 li {
 	width:198px;
 	line-height:26px;
-	padding-left: 43px;
+	padding-left: 7px;
 	border-bottom:1px solid #DBDBDB;
 }
 .publicity {
-	position:absolute;
-	top:9px;
-} 
+	width:526px;
+	height:182px;
+	background-image: url("../images/template1.png");
+	position:relative;
+	top: -174px;
+	left: 35%;
+}
+
 .icon {
+	display: block;
 	list-style-image: url("../images/sp-over.jpg");
 	padding-top: 10px;
 	padding-left:42px;
-
+}
+.wrapp {
+	display: flex;
+	flex-direction: row;
+}
+aside {
+	width:247px;
+	display:flex;
+	flex-direction: column;
+	font-family:Tahoma;
+	font-size: 11px;
 }
 .icon2 {
 	list-style-image:url('../images/browse2.png');
 	padding-left:38px;
-	line-height:26px;
 }
 .icon2 li {
-	width:155px;
 	height:21px;
 	line-height:23px;
-    padding-left: 24px;
+    padding-left: 11px;
 }
-aside {
-	float:left;
-	font-family:Tahoma;
-	font-size: 11px;
-}
+
 h3 {
 	background-color:#DBDBDB;
 	width:224px;
@@ -103,29 +134,34 @@ h3 {
 }
 main {
 	width:479px;
-	height:513px;
-	margin:0px 1px 1px 248px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
 	padding:8px 16px 10px 18px;
 	background:#1F1F1F;
 }
+main img {
+	width:233px;
+	margin: 3px;
+}
 .box {
 	display:flex;
-	flex-direction:row;
+	flex-wrap: wrap;
 }
 .price {
-	background:white;
+	background:#FFFFFF;
 	width:211px;
 	height:142px;
 	margin:0 4px 8px;
 	padding:0 9px;
-	border:1px solid black;
+	border:1px solid #000000;
 }
 .price img {
 	width:53%;
 }
 .price p {
 	margin-top:10px;
-	color:black;
+	color:#000000;
 	font-size: 11px;
 	width:40%;
 }
@@ -136,7 +172,7 @@ main {
 .buttons {
     margin-top:10px;
     padding-top:9px;
-    border-top:1px dashed grey;
+    border-top:1px dashed #808080;
 	display: flex;
 	flex-direction:row;
 	align-items: flex-end;
@@ -152,28 +188,20 @@ main {
 	height:19px;
 }
 .menu {
-	color:black;
-	font-size:10px;
-	position:relative;
-	top:-50px;
-	left:65px;
+	color:#000000;
+	font-size:11px;
+	left:15px;
 }
 .prod p {
-	margin:5px 1px 31px 1px;	
+	margin:5px 1px 31px 1px;
 }
 .prod img {
 	width:40%;
 }
 span {
-	color:red;
-}
-.day {
-	position:relative;
-	top:2px;
-	left:33px;	
+	color:#ec1010;
 }
 .cart img {
-
 	width:40%;
 	margin:4px 1px;
 }
@@ -181,7 +209,7 @@ span {
 	width:204px;
 	margin:6px 4px;
 	padding:3px 0;
-	border-bottom:1px dashed #BDBDBD;	
+	border-bottom:1px dashed #BDBDBD;
 	float:left;
 }
 .products {
@@ -192,24 +220,55 @@ span {
 	font-size:14px;
 	color:white;
 }
-.details {
-	display:flex;
-	flex-direction:row;
-}
-.details img {
-	width:233px;
-	margin:3px;
-}
 footer {
 	width:761px;
 	height:67px;
+	background:linear-gradient(to top, #BEBEBE , #ffffffeb 96%);
 	display: inline-flex;
 }
-.footer img {
-	width:517px;
-	height:67px;
+.payment {
+	border-right: 2px dashed #FFFFFF;
+	width:32%;
+}
+.payPal {
+	width:82px;
+	height:28px;
+	background-image: url("../images/payPal.png");
+}
+.visa {
+	width:40px;
+	height:27px;
+	background-image: url("../images/visa.png");
+}
+.masterCard {
+	width:40px;
+	height:27px;
+	background-image: url("../images/mC.png");
+}
+ ul.mn {
+	margin: 0;
+	padding: 4px;
+}
+ .mn li {
+	display: inline;
+	margin-right:5px;
+}
+ul.cards {
+	margin:0;
+	padding:4px;
+}
+ul.cards li {
+	display: inline;
+	margin-right:5px;
 }
 .footer p {
-	color:black;
+	color:#000000;
 	margin-top:5px;
-}		
+}
+.menu p {
+	margin-left: 13px;
+    text-decoration: none;
+    font-family: Tahoma, Verdana, sans-serif;
+    font-size: 7pt;
+    color: #000;
+}
